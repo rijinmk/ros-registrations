@@ -1,0 +1,96 @@
+@font-face{
+	font-family: robotoT;
+	src: url("fonts/Roboto-Thin.ttf");
+}
+@font-face{
+	font-family:robotoL;
+	src: url("fonts/Roboto-light.ttf");
+}
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	background: url("images/bg1.png");
+	font-family: robotoL;
+}
+
+.reg_form_holder{
+	width:300px;
+	height:500px;
+	background: #e74c3c;
+	position: absolute;
+	color:#fff;
+	top:50%;
+	left:50%;
+	margin-left:-151px;
+	margin-top:-250px;
+	box-shadow:3px 3px 20px rgba(0,0,0,0.7);
+}
+
+.reg_form_holder h4, .reg_form_holder h6{
+	position: relative;
+	top:15px;
+}
+
+.reg_form_holder h4{
+	letter-spacing: 2px;
+	font-size: 30px;
+	font-family: robotoT;
+}
+
+.reg_form_holder h6{
+	letter-spacing: 6px;
+	opacity:0.5;
+	font-family: robotoT;
+}
+
+.reg_form_holder .reg_form{
+	width:80%;
+	margin-left:10%;
+	/*ADD THE HEIGHT AND THE ALIGNING FROM THE CENTER HERE*/
+	position: relative;
+	top:50px;
+}
+
+.reg_form_holder .reg_form .inp_coll{
+	margin-bottom:20px;
+}
+
+.reg_form_holder .reg_form label{
+	font-size: 12px;
+	letter-spacing: 1px;
+	opacity:0.7;
+}
+
+.reg_form_holder .reg_form .text_inps{
+	padding:5px 0px 2px 0px;
+	font-size: 16px;
+	width:100%;
+	margin-top: 5px;
+	border:none;
+	color:#fff;
+	font-family: robotoL;
+	outline: none;
+	border-bottom:1px solid rgba(255,255,255,0.4);
+	background: #e74c3c;
+}
+
+.reg_form_holder .reg_form .text_inps:focus{
+	border-bottom:1px solid rgba(255,255,255,1);
+}
+
+.reg_form_holder .reg_form .reg_btn{
+	width:100%;
+	border:none;
+	background: #c0392b;
+	color: #fff;
+	font-family: robotoT;
+	padding:10px 0px 10px 0px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	cursor: pointer;
+	outline:none;
+}

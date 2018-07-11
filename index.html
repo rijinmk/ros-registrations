@@ -1,0 +1,350 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>ROS - PLAN - A</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		@font-face{
+			font-family: robotoT;
+			src: url("Roboto-Thin.ttf");
+		}
+		@font-face{
+			font-family:robotoL;
+			src: url("Roboto-Light.ttf");
+		}
+
+		*{
+			padding:0px;
+			margin:0px;
+		}
+
+		body{
+			background: url("bg1.png");
+			font-family: robotoL;
+		}
+
+		.reg_form_holder{
+			width:300px;
+			height:500px;
+			background: #e74c3c;
+			position: absolute;
+			color:#fff;
+			top:50%;
+			left:50%;
+			margin-left:-151px;
+			margin-top:-250px;
+			box-shadow:3px 3px 20px rgba(0,0,0,0.7);
+		}
+
+		.reg_form_holder h4, .reg_form_holder h6{
+			position: relative;
+			top:15px;
+		}
+
+		.reg_form_holder h4{
+			letter-spacing: 2px;
+			font-size: 30px;
+			font-family: robotoT;
+		}
+
+		.reg_form_holder h6{
+			letter-spacing: 6px;
+			opacity:0.5;
+			font-family: robotoT;
+		}
+
+		.reg_form_holder .reg_form{
+			width:80%;
+			margin-left:10%;
+			/*ADD THE HEIGHT AND THE ALIGNING FROM THE CENTER HERE*/
+			position: relative;
+			top:50px;
+		}
+
+		.reg_form_holder .reg_form .inp_coll{
+			margin-bottom:20px;
+		}
+
+		.reg_form_holder .reg_form label{
+			font-size: 12px;
+			letter-spacing: 1px;
+			opacity:0.7;
+		}
+
+		.reg_form_holder .reg_form .text_inps{
+			padding:5px 0px 2px 0px;
+			font-size: 16px;
+			width:100%;
+			margin-top: 5px;
+			border:none;
+			color:#fff;
+			font-family: robotoL;
+			outline: none;
+			border-bottom:1px solid rgba(255,255,255,0.4);
+			background: #e74c3c;
+		}
+
+		.reg_form_holder .reg_form .text_inps:focus{
+			border-bottom:1px solid rgba(255,255,255,1);
+		}
+
+		.reg_form_holder .reg_form .reg_btn{
+			width:100%;
+			border:none;
+			background: #c0392b;
+			color: #fff;
+			font-family: robotoT;
+			padding:10px 0px 10px 0px;
+			letter-spacing: 1px;
+			font-size: 16px;
+			cursor: pointer;
+			outline:none;
+		}
+
+		.thankyou{
+			width:80%;
+			margin-left: 10%;
+			text-align: center;
+			text-transform: uppercase;
+			color:#fff;
+			position: absolute;
+			margin-top: -100px;
+			top:50%;
+			padding:30px 0px;
+			letter-spacing: 1px;
+			display:none;
+			background: rgba(0,0,0,0.4);
+		}
+
+		.sur_table{
+			width:80%;
+			padding:10px;
+			margin-left:10%;
+			background: #e74c3c;
+			color:#fff;
+			position: absolute;
+			top:50%;
+			display:none;
+			margin-top: -140px;
+			box-shadow:3px 3px 20px rgba(0,0,0,0.7);
+		}
+		.sur_table tr td{
+			padding:4px;
+		}
+
+		.sur_table .n, .sur_table .c{
+			text-align: center;
+			padding:10px;
+
+		}
+		.sur_table .q{
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+		.sur_table .h{
+			opacity:0.6;
+			text-transform: uppercase;
+			font-size: 10px;
+			font-style: robotoL;
+			font-weight:900;
+			letter-spacing: 2px;
+		}
+		.sub_table{
+			background: #D1DBBD;
+			height:50px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			border:none;
+			font-size: 15px;
+			width:30%;
+			position: absolute;
+			margin-left: 35%;
+			top:50%;
+			z-index:9999;
+			display:none;
+			margin-top: 160px;
+			box-shadow:3px 3px 20px rgba(0,0,0,0.7);
+		}
+		@media (max-width: 500px){
+			.sur_table{
+				margin-top:-253.5px;
+			}
+			.sur_table tr td{
+				padding-bottom:20px;
+			}
+			.sub_table{
+				margin-top: 270px;
+			}
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id='wrapper'>
+			<h1 class="thankyou"></h1>
+			<div class='reg_form_holder'>
+				<h4 align='center'>SYMPOSIUM</h4>
+				<h6 align='center'>ON IOT</h6>
+
+				<div class='reg_form'>
+					<script type='text/javascript'>var submitted=false;</script>
+					<iframe name='hidden_iframe' id='hidden_iframe' style='display:none;' onload='if(submitted) {window.location="";}'></iframe>
+					<form action='https://docs.google.com/forms/d/e/1FAIpQLSdc2x0agdDtu75wGvsJQwZ1FvxpuRjh1Gl8v3Z8IYISTPV2uA/formResponse' target='hidden_iframe' method='POST' onsubmit='return validate();submitted=true;'>
+
+						<div class='inp_coll'>
+							<label>UNIVERSITY</label><br>
+							<input name='entry.1337524927' type='text' id='uni_inp' class='text_inps focus' /><br>
+						</div>
+
+						<div class='inp_coll'>
+							<label>FULL-NAME</label><br>
+							<input name='entry.245542126' type='text' id='full_inp' class='text_inps' /><br>
+						</div>
+
+						<div class='inp_coll'>
+							<label>MOBILE NUMBER</label><br>
+							<input name='entry.1249478062' type='text' id='mob_inp' class='text_inps' /><br>
+						</div>
+
+						<div class='inp_coll'>
+							<label>EMAIL</label><br>
+							<input name='entry.406564973' type='text' id='em_inp' class='text_inps' /><br>
+						</div>
+
+						<input type='submit' value='REGISTER' class='reg_btn'/>
+					</form>
+				</div>
+			</div>
+
+			<div class="sur_holder">
+
+					<!--https://docs.google.com/forms/d/e/1FAIpQLSdgYqmuwkO7MU9UuZKRsyOaSUFqHTT1LvEpk8-YfJtOAqO1AQ/formResponse-->
+					<script type='text/javascript'>var submitted=false;</script>
+					<iframe name='hidden_iframe' id='hidden_iframe' style='display:none;'
+					onload='if(submitted) {window.location="";}'></iframe>
+					<form action='https://docs.google.com/forms/d/e/1FAIpQLSdgYqmuwkO7MU9UuZKRsyOaSUFqHTT1LvEpk8-YfJtOAqO1AQ/formResponse' target='hidden_iframe' method='POST' onsubmit='return validate_ser();submitted=true;'>
+
+					<table class="sur_table">
+					  <tr>
+					    <td class="h">QUESTIONS</td>
+					    <td class="n h">Excellent</td>
+					    <td class="n h">Very Good</td>
+							<td class="n h">Good</td>
+							<td class="n h">Satisfactory</td>
+							<td class="n h">Bad</td>
+					  </tr>
+					  <tr>
+					    <td class="q">symposium organized satisfactorily</td>
+							<td class="c"><input type="radio" value="Option 1" name="entry.103098543"></td>
+					    <td class="c"><input type="radio" value="Option 2" name="entry.103098543"></td>
+							<td class="c"><input type="radio" value="Option 3" name="entry.103098543"></td>
+					    <td class="c"><input type="radio" value="Option 4" name="entry.103098543"></td>
+							<td class="c"><input type="radio" value="Option 5" name="entry.103098543"></td>
+					  </tr>
+					  <tr>
+					    <td class="q">learning outcome achieved</td>
+							<td class="c"><input type="radio" value="Option 1" name="entry.1219023181"></td>
+					    <td class="c"><input type="radio" value="Option 2" name="entry.1219023181"></td>
+							<td class="c"><input type="radio" value="Option 3" name="entry.1219023181"></td>
+					    <td class="c"><input type="radio" value="Option 4" name="entry.1219023181"></td>
+							<td class="c"><input type="radio" value="Option 5" name="entry.1219023181"></td>
+					  </tr>
+						<tr>
+							<td class="q">study materials provided for workshop</td>
+							<td class="c"><input type="radio" value="Option 1" name="entry.368362164"></td>
+					    <td class="c"><input type="radio" value="Option 2" name="entry.368362164"></td>
+							<td class="c"><input type="radio" value="Option 3" name="entry.368362164"></td>
+					    <td class="c"><input type="radio" value="Option 4" name="entry.368362164"></td>
+							<td class="c"><input type="radio" value="Option 5" name="entry.368362164"></td>
+						</tr>
+						<tr>
+							<td class="q">satisfactory level about the speakers</td>
+							<td class="c"><input type="radio" value="Option 1" name="entry.1158359907"></td>
+					    <td class="c"><input type="radio" value="Option 2" name="entry.1158359907"></td>
+							<td class="c"><input type="radio" value="Option 3" name="entry.1158359907"></td>
+					    <td class="c"><input type="radio" value="Option 4" name="entry.1158359907"></td>
+							<td class="c"><input type="radio" value="Option 5" name="entry.1158359907"></td>
+						</tr>
+						<tr>
+							<td class="q">do you recommend similar events in the future</td>
+							<td class="c"><input type="radio" value="Option 1" name="entry.1761748586"></td>
+					    <td class="c"><input type="radio" value="Option 2" name="entry.1761748586"></td>
+							<td class="c"><input type="radio" value="Option 3" name="entry.1761748586"></td>
+					    <td class="c"><input type="radio" value="Option 4" name="entry.1761748586"></td>
+							<td class="c"><input type="radio" value="Option 5" name="entry.1761748586"></td>
+						</tr>
+						<input class="sub_table" type="submit" value="submit">
+					</table>
+
+				</form>
+			</div>
+
+		</div>
+	</body>
+
+	<script src='jq.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('.focus').focus();
+		});
+
+		function validate(){
+			var f=0;
+
+			var uni = $('#uni_inp').val();
+			var full = $('#full_inp').val();
+			var mob = $('#mob_inp').val();
+			var email = $('#em_inp').val();
+
+			if(uni=='' || full=='' || mob=='' || email==''){
+				f = 0;
+			}else{
+				f = 1;
+			}
+
+			if(f==0){
+				//$('.error_message').fadeIn();
+				alert('Please fill all the fields');
+				return false;
+			}else{
+				$(".reg_form_holder").fadeOut();
+				$(".thankyou").text(full+", Thank you for registering.");
+				$(".thankyou").fadeIn();
+				return true;
+			}
+		}
+
+		function validate_ser(){
+			var f = 0;
+			if ($('input[name="entry.103098543"]:checked').val() && $('input[name="entry.1219023181"]:checked').val() && $('input[name="entry.368362164"]:checked').val() && $('input[name="entry.1158359907"]:checked').val() && $('input[name="entry.1761748586"]:checked').val()) {
+				$(".sur_table").fadeOut();
+				$(".sub_table").delay(300).fadeOut();
+				$(".thankyou").text("Thank you for filling our survey.");
+				$(".thankyou").fadeIn();
+				return true;
+			}else{
+				alert("Please fill all the fields");
+				return false;
+			}
+		}
+
+		/*function check_time(x){
+			if(x<0){
+				$(".reg_form_holder").hide();
+				clearInterval(reg_hide);
+				$(".sur_table").show();
+				$(".sub_table").show();
+			}
+		}
+
+		var reg_hide = setInterval(function(){
+			var time = Math.floor(new Date().getTime() / 1000);
+			var end = Math.floor(new Date(2017, 2, 29, 11, 40) / 1000); //11, 40
+			var diff = end - time;
+			check_time(diff);
+			console.log(end - time); //new Date(year, month, day, hours, minutes, seconds, milliseconds);
+		},100);*/
+
+	</script>
+</html>
